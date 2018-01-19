@@ -16,6 +16,9 @@ usage: louvain.py [-h] [-i INPUTFILE]
 
 Example:
 python louvain.py -i phy_ppi_sample 
+
 ('Number of communities', 25.0)
+
 ('modularity:', 0.7637618748084707)
+
 runtime: 0.0175979137421
