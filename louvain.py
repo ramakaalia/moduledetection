@@ -26,7 +26,8 @@ class WeightedLouvain():
         try:
             with self.inFile as inf:
                 next(inf, '')
-                G = nx.read_weighted_edgelist(inf, delimiter='\t', nodetype=str)
+                #G = nx.read_weighted_edgelist(inf, delimiter='\t', nodetype=str)
+                G = nx.read_edgelist(inf, delimiter='\t', nodetype=str)
 
             self.partition = community.best_partition(G)
             self.best_mod = community.modularity(self.partition,G)
